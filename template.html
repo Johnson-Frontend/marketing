@@ -10,7 +10,7 @@
             font-family: Arial, sans-serif;
             background-color: #f5f5f5;
             color: #000; /* Changed text color to black */
-            padding: 0; /* Removed padding to get rid of the big gap */
+            padding: 30px; /* Removed padding to get rid of the big gap */
         }
 
         /* Hero Section */
@@ -18,14 +18,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 50vh;
-    background: url('image/persona.png') center center no-repeat;
-    background-size: cover; /* Changed background-size to cover */
+    min-height: 60vh;
+    background: url('image/11.png') center center no-repeat;
+    background-size: contain; /* Changed background-size to contain */
     background-color: #ffffff; /* Fallback color to fill any empty space */
     color: #000; /* Changed text color to black */
     text-align: center;
     padding: 50px;
     border-radius: 16px; /* Added border-radius to make edges less sharp */
+    background-position: center center; /* Ensure the image is centered */
+    max-width: 950px; /* Set max-width for background image */
+    margin: 0 auto; /* Center the hero section */
 }
 
 
