@@ -778,10 +778,7 @@
             font-size: 18px; /* Set font size of paragraphs to 18px */
         }
 
-        .highlight {
-            background-color: yellow; /* Highlight color */
-            transition: background-color 0.5s ease;
-        }
+
 
     </style>
 </head>
@@ -936,20 +933,7 @@
             window.location.href = url;
         }
 
-        document.addEventListener('DOMContentLoaded', function() {
-            const highlightText = document.getElementById('highlight-text');
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        highlightText.classList.add('highlight');
-                    } else {
-                        highlightText.classList.remove('highlight');
-                    }
-                });
-            }, { threshold: 0.1 });
 
-            observer.observe(highlightText);
-        });
     </script>
 
 <div id="footer-placeholder"></div>
