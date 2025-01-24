@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minimalist Blog Template</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="chat.css">
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
             background-color: #f5f5f5;
             color: #000; /* Changed text color to black */
-            padding: 10px; /* Removed padding to get rid of the big gap */
+            padding: 0 px; /* Removed padding to get rid of the big gap */
             background-image: url('/image/background2.png');
             background-size: cover;
             background-repeat: no-repeat;
@@ -40,7 +42,7 @@
             background-color: #ffffff; /* Fallback color to fill any empty space */
             color: #000; /* Changed text color to black */
             text-align: center;
-            padding: 50px;
+            padding: 60px;
             border-radius: 16px; /* Added border-radius to make edges less sharp */
             background-position: center center; /* Ensure the image is centered */
             max-width: 950px; /* Set max-width for background image */
@@ -93,7 +95,7 @@
             background: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Reduced box-shadow */
             border-radius: 8px; /* Reduced border-radius */
-            max-width: 780px;
+            max-width: 850px;
             margin: 40px auto;
         }
 
@@ -140,7 +142,7 @@
             background: white;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             border-radius: 16px; /* Updated border-radius to match big-container */
-            max-width: 700px; /* Updated max-width to match big-container */
+            max-width: 770px; /* Updated max-width to match big-container */
             margin: 40px auto;
         }
 
@@ -191,6 +193,28 @@
     </style>
 </head>
 <body>
+    <!-- Load header from header.html -->
+     <!-- Directly include the header -->
+     <header class="sticky-header debug-header">
+        <nav class="main-nav">
+            <div class="nav-logo">
+                <a href="https://marketing.johnsonmarketer.com/">
+                    <img id="logo" src="https://raw.githubusercontent.com/Johnson-Frontend/project/ed55a241c8b75ccef3b99e1cba704eb85ea39ad8/image/logo.svg" alt="Brand Logo">
+                </a>
+                <a href="https://marketing.johnsonmarketer.com/" style="text-decoration: none; color: inherit;">
+                    <span style="font-size: 1.2rem;">ByteBoost</span>
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="https://marketing.johnsonmarketer.com/">Home</a>
+                <a href="https://marketing.johnsonmarketer.com/implementing.html">Services</a>
+                <a href="https://marketing.johnsonmarketer.com/implementing.html">About</a>
+                <a href="https://marketing.johnsonmarketer.com/implementing.html" class="project-list-link pulse">Project List</a>
+                <a href="https://marketing.johnsonmarketer.com/implementing.html" class="get-in-touch-link">Get in touch</a>
+            </div>
+        </nav>
+    </header>
+
     <!-- Hero Section -->
     <div class="hero">
         <div>
