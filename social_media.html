@@ -778,6 +778,37 @@
             font-size: 18px; /* Set font size of paragraphs to 18px */
         }
 
+        .icon-placeholder {
+    width: 20%; /* Changed from previous width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px; /* Add margin to the right of the icon */
+}
+
+.text-content {
+    width: 70%; /* Ensure text takes 70% of the container */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* ...existing styles... */
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+}
+
+/* Optional: Adjust image size within the icon-placeholder if necessary */
+.icon-placeholder img {
+    width: 60%; /* Adjust as needed */
+    height: auto;
+}
+
+
+
     </style>
 </head>
 <body>
@@ -866,14 +897,66 @@
         </div>
     </div>
 
-    <!-- New Section -->
-    <div class="content">
-        <h2 class="business-case-heading">Business Case</h2>
-        <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
+
+
+       <!-- Insert star_email.html content above the form section -->
+       <div class="content">
+        <main class="container mx-auto py-8">
+            <!-- Features Section -->
+            <h2 class="business-case-heading">Case in Action</h2>
+            <br>
+                    <!-- Feature Item 1 -->
+                    <div class="content gradient-border flex items-center feature-item">
+                        <div class="icon-placeholder">
+                            <img src="image/1.png" alt="Icon 1" class="w-full h-full object-cover rounded-full">
+                        </div>
+                        <div class="text-content">
+                            <h2 class="text-lg font-semibold mb-2">Situation</h2>
+                            <p class="text-gray-600 text-lg">
+                                A few years ago, I managed social media for a 3D printer company. While our accounts were doing okay, management wanted to take things to the next level after seeing competitors drive significant traffic to their shopping sites through social media. The goal was clear: replicate that success while setting our brand apart.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Feature Item 2 -->
+                    <div class="content gradient-border flex items-center feature-item">
+                        <div class="icon-placeholder">
+                            <img src="image/2.png" alt="Icon 2" class="w-full h-full object-cover rounded-full">
+                        </div>
+                        <div class="text-content">
+                            <h2 class="text-lg font-semibold mb-2">Objectives</h2>
+                            <p class="text-gray-600 text-lg">
+                                We aimed to boost metrics across the board, including page likes, followers, post engagement, and views. Specific targets included 1,000 views and 50 likes per post, with a stretch goal of 90,000 subscribers within three months. To make it happen, we planned strategic activities like giveaways, live streams, and tutorials while maintaining a consistent posting routine.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Feature Item 3 -->
+                    <div class="content gradient-border flex items-center feature-item">
+                        <div class="icon-placeholder">
+                            <img src="image/3.png" alt="Icon 3" class="w-full h-full object-cover rounded-full">
+                        </div>
+                        <div class="text-content">
+                            <h2 class="text-lg font-semibold mb-2">Actions Taken</h2>
+                            <p class="text-gray-600 text-lg">
+                                We proposed a well-rounded strategy, including a 3D printer giveaway, bi-weekly live streams, YouTube tutorials, and engaging company introduction posts. Despite challenges like department silos and technical customer complaints, we stayed adaptable. To address user concerns, we invited technical experts to live FAQ sessions, which proved to be a hit. Our team worked cohesively and strategically to meet ambitious goals within tight deadlines.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Feature Item 4 -->
+                    <div class="content gradient-border flex items-center feature-item">
+                        <div class="icon-placeholder">
+                            <img src="image/4.png" alt="Icon 4" class="w-full h-full object-cover rounded-full">
+                        </div>
+                        <div class="text-content">
+                            <h2 class="text-lg font-semibold mb-2">Results</h2>
+                            <p class="text-gray-600 text-lg">
+                                Within three months, we achieved most of our goals, with one social media post going viral and racking up 1 million views. Engagement and followers grew significantly, and the FAQ sessions gained immense popularity, boosting the brand’s reputation. From this experience, I learned that collaboration, avoiding silos, and strong leadership support are key to driving successful campaigns.
+                            </p>
+
+                        </div>
+                    </div>
+    
     </div>
+ 
 
     <!-- Bottom Form Section -->
     <div class="form-section">
