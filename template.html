@@ -869,10 +869,7 @@
     <!-- New Section -->
     <div class="content">
         <h2 class="business-case-heading">Business Case</h2>
-        <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
+        <div id="business-case-content"></div>
     </div>
 
     <!-- Bottom Form Section -->
@@ -926,6 +923,14 @@
                 })
                 .catch(error => console.error('Error loading chat widget:', error));
         });
+
+        // Load star.html into the business-case-content div
+        fetch('star.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('business-case-content').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading star.html:', error));
 
         function navigateTo(url) {
             window.location.href = url;
