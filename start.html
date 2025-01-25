@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fine-Tuning Layout</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .gradient-border {
+            border: 4px solid;
+            border-image-slice: 1;
+            border-width: 4px;
+            border-image-source: linear-gradient(135deg, #9b59b6, #3498db);
+            border-radius: 26px; /* Adjusted border-radius */
+        }
+        .icon-placeholder {
+            width: 70px;
+            height: 70px;
+            background: #e4e4e7;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 1rem;
+        }
+        .content {
+            padding: 40px; /* Reduced padding */
+            background: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Reduced box-shadow */
+            border-radius: 26px; /* Reduced border-radius */
+            max-width: 1000px;
+            margin: 40px auto;
+        }
+        .feature-item {
+            width: 80%;
+            margin: 0 auto;
+            border-radius: 20px; /* Added border-radius */
+            border: 2px solid #e4e4e7; /* Added border */
+        }
+        .feature-item .text-content {
+            width: 70%; /* 70% width for the text */
+        }
+        .feature-item .icon-placeholder {
+            margin-right: 15%; /* Added margin-right for gap */
+            margin-left: 10%; /* Added margin-left for gap */
+
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+    <!-- Main Content Section -->
+    <main class="container mx-auto py-8">
+        <!-- Hero Banner -->
+    
+
+        <!-- Features Section -->
+        <section class="container mx-auto content">
+            <div class="flex flex-col gap-6">
+                <div class="content gradient-border flex items-center feature-item">
+                    <div class="icon-placeholder">
+                        <img src="image/1.png" alt="Icon 1" class="w-full h-full object-cover rounded-full">
+                    </div>
+                    <div class="text-content">
+                        <h3 class="text-lg font-semibold mb-2">Situation</h3>
+                        <p class="text-gray-600">Brief description of Feature 1.Brief description of Feature 1.Brief description of Feature 1.Brief description of Feature 1.Brief description of Feature 1.Brief description of Feature 1.</p>
+                        
+                    </div>
+                </div>
+                <div class="content gradient-border flex items-center feature-item">
+                    <div class="icon-placeholder">
+                        <img src="image/2.png" alt="Icon 2" class="w-full h-full object-cover rounded-full">
+                    </div>
+                    <div class="text-content">
+                        <h3 class="text-lg font-semibold mb-2">Tasks</h3>
+                        <p class="text-gray-600">Brief description of Feature 2.</p>
+                    </div>
+                </div>
+                <div class="content gradient-border flex items-center feature-item">
+                    <div class="icon-placeholder">
+                        <img src="image/3.png" alt="Icon 3" class="w-full h-full object-cover rounded-full">
+                    </div>
+                    <div class="text-content">
+                        <h3 class="text-lg font-semibold mb-2">Actions</h3>
+                        <p class="text-gray-600">Brief description of Feature 3.</p>
+                    </div>
+                </div>
+                <div class="content gradient-border flex items-center feature-item">
+                    <div class="icon-placeholder">
+                        <img src="image/4.png" alt="Icon 4" class="w-full h-full object-cover rounded-full">
+                    </div>
+                    <div class="text-content">
+                        <h3 class="text-lg font-semibold mb-2">Result</h3>
+                        <p class="text-gray-600">Brief description of Feature 4.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
