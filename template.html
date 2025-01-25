@@ -140,22 +140,27 @@
             background: white;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             border-radius: 26px; /* Updated border-radius to match big-container */
-            max-width: 920px; /* Updated max-width to match big-container */
-            margin: 40px auto;
+            max-width: 1000px; /* Updated max-width to match big-container */
+            margin: 10px auto; /* Reduced top margin */
+            margin-bottom: 50px;
         }
 
         .form-section h2 {
             margin-bottom: 20px;
+            font-weight: bold; /* Added to make the heading bold */
+            font-size: 2rem; /* Increased font size */
         }
 
         .form-section form {
             display: flex;
-            flex-direction: column;
+            flex-direction: column; /* Changed from row to column for vertical alignment */
+            justify-content: center;
             align-items: center;
+            gap: 10px; /* Maintain spacing between elements */
         }
 
         .form-section input {
-            width: 80%;
+            width: 70%; /* Adjusted width for better alignment */
             padding: 10px;
             margin: 10px 0;
             border: 1px solid #ccc;
@@ -163,6 +168,9 @@
         }
 
         .form-section button {
+            width: auto; /* Reset width to fit content */
+            align-self: center; /* Center the button horizontally */
+            margin-top: 10px; /* Add spacing above the button */
             padding: 10px 20px;
             font-size: 1rem;
             border: none;
@@ -179,15 +187,7 @@
             box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Reduced shadow on hover */
         }
 
-        .business-case-heading {
-            background-image: linear-gradient(to right, rgba(106, 17, 203, 0.8) 20%, rgba(37, 117, 252, 0.8) 80%);
-            color: white;
-            text-align: center;
-            font-size: 2rem;
-            margin-bottom: 20px;
-            padding: 10px; /* Added padding for better spacing */
-            border-radius: 8px; /* Added border-radius for rounded corners */
-        }
+
 
         footer {
             background-color: rgba(45, 55, 72, 0.9);
@@ -867,9 +867,7 @@
     </div>
 
     <!-- New Section -->
-    <div class="content">
-        <h2 class="business-case-heading">Business Case</h2>
-    </div>
+   
 
     <div id="business-case-content"></div>
 
@@ -880,6 +878,7 @@
         <form></form>
             <input type="text" placeholder="Your Name">
             <input type="email" placeholder="Your Email">
+            <br>
             <button type="submit">Sign Up</button>
         </form>
     </div>
