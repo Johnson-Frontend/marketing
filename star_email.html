@@ -14,14 +14,16 @@
             border-radius: 26px; /* Adjusted border-radius */
         }
         .icon-placeholder {
-            width: 20px;
-            height: 20px;
+            width: 30%; /* Changed from 20px to 30% */
+            height: auto; /* Adjust height to maintain aspect ratio */
             background: #e4e4e7;
             border-radius: 50%;
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-right: 1rem;
+            /* Removed margin-right and margin-left */
+            /* margin-right: 15%; */
+            /* margin-left: 10%; */
         }
         .content {
             padding: 40px; /* Reduced padding */
@@ -39,12 +41,13 @@
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Added shadow */
         }
         .feature-item .text-content {
-            width: 70%; /* 70% width for the text */
+            width: 70%; /* Ensure text takes 70% of the container */
         }
-        .feature-item .icon-placeholder {
-            margin-right: 15%; /* Added margin-right for gap */
-            margin-left: 10%; /* Added margin-left for gap */
 
+        /* Optional: Adjust image size within the icon-placeholder if necessary */
+        .icon-placeholder img {
+            width: 80%; /* Adjust as needed */
+            height: auto;
         }
 
         .business-case-heading {

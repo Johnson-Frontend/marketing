@@ -779,6 +779,29 @@
             font-size: 18px; /* Set font size of paragraphs to 18px */
         }
 
+        .icon-placeholder {
+            width: 20%; /* Changed from previous width */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* Removed margin-right and margin-left */
+            /* margin-right: 15%; */
+            /* margin-left: 10%; */
+        }
+
+        .text-content {
+            width: 70%; /* Ensure text takes 70% of the container */
+            /* ...existing styles... */
+        }
+
+        /* Optional: Adjust image size within the icon-placeholder if necessary */
+        .icon-placeholder img {
+            width: 60%; /* Adjust as needed */
+            height: auto;
+        }
+
     </style>
 </head>
 <body>
@@ -873,8 +896,6 @@
             <!-- Features Section -->
             <h2 class="business-case-heading">Case in Action</h2>
             <br>
-            <section class="container mx-auto content">
-                <div class="flex flex-col gap-6">
                     <!-- Feature Item 1 -->
                     <div class="content gradient-border flex items-center feature-item">
                         <div class="icon-placeholder">
@@ -923,8 +944,6 @@
                             </p>
                         </div>
                     </div>
-                </div>
-            </section>
         </main>
     </div>
 
