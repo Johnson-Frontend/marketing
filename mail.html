@@ -778,6 +778,36 @@
             font-size: 18px; /* Set font size of paragraphs to 18px */
         }
 
+        .icon-placeholder {
+    width: 20%; /* Changed from previous width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px; /* Add margin to the right of the icon */
+}
+
+.text-content {
+    width: 70%; /* Ensure text takes 70% of the container */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* ...existing styles... */
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+}
+
+/* Optional: Adjust image size within the icon-placeholder if necessary */
+.icon-placeholder img {
+    width: 60%; /* Adjust as needed */
+    height: auto;
+}
+
+
     </style>
 </head>
 <body>
@@ -867,14 +897,60 @@
     </div>
 
     <!-- New Section -->
-    <div class="content">
-        <h2 class="business-case-heading">Business Case</h2>
-        <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
-    </div>
+     <!-- Insert star_email.html content above the form section -->
+     <div class="content">
+        <main class="container mx-auto py-8">
+            <!-- Features Section -->
+            <h2 class="business-case-heading">Case in Action</h2>
+            <br>
+                    <!-- Feature Item 1 -->
+                    <div class="content gradient-border flex items-center feature-item">
+                        <div class="icon-placeholder">
+                            <img src="image/1.png" alt="Icon 1" class="w-full h-full object-cover rounded-full">
+                        </div>
+                        <div class="text-content">
+                            <h2 class="text-lg font-semibold mb-2">Situation</h2>
+                            <p class="text-gray-600 text-lg">
+                                Our Direct mail marketing campaign idea all started in 2023. You know those random flyers you get in the mail—the ones that usually end up as coffee coasters or emergency fire starters? Well, turns out they actually work. We kept getting flashy mail from Pizza Hut, Sephora, Staples, even our competitors, and we actually opened them. Not out of boredom, but because they were visually striking, packed with discounts, and even had QR codes (very fancy). That got us thinking—if this works on us, maybe it’ll work on our customers too. Time to weaponize the mailbox.                            </p>
+                        </div>
+                    </div>
+                    <!-- Feature Item 2 -->
+                    <div class="content gradient-border flex items-center feature-item">
+                        <div class="icon-placeholder">
+                            <img src="image/2.png" alt="Icon 2" class="w-full h-full object-cover rounded-full">
+                        </div>
+                        <div class="text-content">
+                            <h2 class="text-lg font-semibold mb-2">Objectives</h2>
+                            <p class="text-gray-600 text-lg">
+                                We didn’t just want to throw paper at people and hope for the best. We set real goals. First, we targeted specific areas, city by city, province by province in Canada, because nationwide carpet-bombing is expensive. Next, we tracked how many mailers actually made it by randomly calling folks (not creepy, just thorough). We measured how many orders came from the campaign and calculated ROI, because if we’re spending money, we better be making it back (and then some). Oh, and we hired a developer to scrape data from our audience—because why stop at mail when you can also have a data-driven approach?                            </p>
+                        </div>
+                    </div>
+                    <!-- Feature Item 3 -->
+                    <div class="content gradient-border flex items-center feature-item">
+                        <div class="icon-placeholder">
+                            <img src="image/3.png" alt="Icon 3" class="w-full h-full object-cover rounded-full">
+                        </div>
+                        <div class="text-content">
+                            <h2 class="text-lg font-semibold mb-2">Actions Taken</h2>
+                            <p class="text-gray-600 text-lg">
+                                Finding a good supplier was our first hurdle. Turns out, not all printing companies are created equal—some send you samples that look like they were printed with a potato. After several rounds of "Hey, can we fix this?" and "Why does this QR code lead to nowhere?", we finally locked in the right team. With that settled, we moved on to testing. We launched small—3,000 mailers first, then 5,000, then another 3,000. Each batch was designed with a strong message, a juicy discount code, and a clear call to action. Basically, we made sure they weren’t the kind of flyers you use to kill a spider but the kind you actually act on.                            </p>
+                        </div>
+                    </div>
+                    <!-- Feature Item 4 -->
+                    <div class="content gradient-border flex items-center feature-item">
+                        <div class="icon-placeholder">
+                            <img src="image/4.png" alt="Icon 4" class="w-full h-full object-cover rounded-full">
+                        </div>
+                        <div class="text-content">
+                            <h2 class="text-lg font-semibold mb-2">Results</h2>
+                            <p class="text-gray-600 text-lg">
+                                Drumroll, please! The first round of 3,000 mailers delivered an ROI of 2.9:1. The second round, with 5,000 mailers, performed even better at 3.2:1. By the third round, another 3,000 mailers brought in a solid 3:1 return. Solid returns, no angry mobs, and actual sales—success! Turns out, when done right, direct mail is still a powerhouse. Lesson learned? If you put effort into making it useful, people don’t just toss it—they use it. And that means more sales, better branding, and a reason to keep that printer running.
+                                Moral of the story: Never underestimate the power of a well-placed discount code in someone’s mailbox.                            </p>
 
+                        </div>
+                    </div>
+    
+    </div>
     <!-- Bottom Form Section -->
     <div class="form-section">
         <h2>Keep in Touch</h2>
