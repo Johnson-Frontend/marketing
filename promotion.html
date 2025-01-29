@@ -778,6 +778,36 @@
             font-size: 18px; /* Set font size of paragraphs to 18px */
         }
 
+        .icon-placeholder {
+    width: 20%; /* Changed from previous width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px; /* Add margin to the right of the icon */
+}
+.text-content {
+    width: 70%; /* Ensure text takes 70% of the container */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.6; /* Increase line height for better readability */
+    /* ...existing styles... */
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+}
+
+/* Optional: Adjust image size within the icon-placeholder if necessary */
+.icon-placeholder img {
+    width: 60%; /* Adjust as needed */
+    height: auto;
+}
+
+
     </style>
 </head>
 <body>
@@ -867,12 +897,54 @@
     </div>
 
     <!-- New Section -->
+    <!-- Insert star_email.html content above the form section -->
     <div class="content">
-        <h2 class="business-case-heading">Business Case</h2>
-        <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
+        <main class="container mx-auto py-8">
+            <!-- Features Section -->
+            <h2 class="business-case-heading">Case in Action</h2>
+            <br>
+                    <!-- Feature Item 1 -->
+                    <div class="content gradient-border flex items-center feature-item">
+                        <div class="icon-placeholder">
+                            <img src="image/1.png" alt="Icon 1" class="w-full h-full object-cover rounded-full">
+                        </div>
+                        <div class="text-content">
+                            <h2 class="text-lg font-semibold mb-2">Situation</h2>
+                            <p class="text-gray-600 text-lg">
+                                A few years ago, I found myself leading the promotional strategy for a gift company, which, at the time, had all the enthusiasm of a toddler with a piggy bank but no clue where to spend. Should we go all-in on ads? Focus on organic growth? Bribe customers with free cookies? (Okay, maybe not the last one.) The challenge was clear: we needed a smarter way to invest in marketing that would actually boost sales, expand market share, and give us clear direction instead of throwing spaghetti at the wall and hoping something stuck.              </div>
+                    </div>
+                    <!-- Feature Item 2 -->
+                    <div class="content gradient-border flex items-center feature-item">
+                        <div class="icon-placeholder">
+                            <img src="image/2.png" alt="Icon 2" class="w-full h-full object-cover rounded-full">
+                        </div>
+                        <div class="text-content">
+                            <h2 class="text-lg font-semibold mb-2">Objectives</h2>
+                            <p class="text-gray-600 text-lg">
+                                To crack the code, we started with research—stalking our competitors in a totally legal way. We mapped out their owned, earned, paid, and shared media to understand what worked and what flopped harder than a bad first date. Our mission? Identify the best channels, content types, and campaign styles while setting KPIs like order placement rate, conversion rate, and social media engagement. Budgeting, target audience, and SMART goals? Check. We made sure every tactic had a purpose instead of just looking “cool.”</div>
+                    </div>
+                    <!-- Feature Item 3 -->
+                    <div class="content gradient-border flex items-center feature-item">
+                        <div class="icon-placeholder">
+                            <img src="image/3.png" alt="Icon 3" class="w-full h-full object-cover rounded-full">
+                        </div>
+                        <div class="text-content">
+                            <h2 class="text-lg font-semibold mb-2">Actions Taken</h2>
+                            <p class="text-gray-600 text-lg">
+                                Once the strategy was locked in, we put it to the test. Using a mix of primary and secondary research, we found Instagram was the place to be—especially with paid ads and giveaways. Lead generation became our north star, and we optimized for clicks, comments, and in-store reviews. Instead of just throwing out discount codes and praying, we designed interactive campaigns that made people actually want to engage (and not just for the freebies).  </div>
+                    </div>
+                    <!-- Feature Item 4 -->
+                    <div class="content gradient-border flex items-center feature-item">
+                        <div class="icon-placeholder">
+                            <img src="image/4.png" alt="Icon 4" class="w-full h-full object-cover rounded-full">
+                        </div>
+                        <div class="text-content">
+                            <h2 class="text-lg font-semibold mb-2">Results</h2>
+                            <p class="text-gray-600 text-lg">
+                                The results? Let’s just say it was like watching a tiny snowball roll into an avalanche—but in a good way. Store conversion rates jumped from 1.6% to 3.2%, sales doubled in just eight months, and traffic exploded by 358% in half a year. Not bad for a campaign that started with a lot of guesswork and turned into a marketing playbook. Lesson learned? Research and strategy aren’t just fancy words—they’re the difference between hoping for success and actually engineering it.
+                        </div>
+                    </div>
+    
     </div>
 
     <!-- Bottom Form Section -->
