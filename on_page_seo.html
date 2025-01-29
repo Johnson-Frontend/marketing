@@ -778,6 +778,36 @@
             font-size: 18px; /* Set font size of paragraphs to 18px */
         }
 
+        .icon-placeholder {
+    width: 20%; /* Changed from previous width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px; /* Add margin to the right of the icon */
+}
+.text-content {
+    width: 70%; /* Ensure text takes 70% of the container */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.6; /* Increase line height for better readability */
+    /* ...existing styles... */
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+}
+
+/* Optional: Adjust image size within the icon-placeholder if necessary */
+.icon-placeholder img {
+    width: 60%; /* Adjust as needed */
+    height: auto;
+}
+
+
     </style>
 </head>
 <body>
@@ -868,11 +898,51 @@
 
     <!-- New Section -->
     <div class="content">
-        <h2 class="business-case-heading">Business Case</h2>
-        <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
+        <main class="container mx-auto py-8">
+            <!-- Features Section -->
+            <h2 class="business-case-heading">Case in Action</h2>
+            <br>
+                    <!-- Feature Item 1 -->
+                    <div class="content gradient-border flex items-center feature-item">
+                        <div class="icon-placeholder">
+                            <img src="image/1.png" alt="Icon 1" class="w-full h-full object-cover rounded-full">
+                        </div>
+                        <div class="text-content">
+                            <h2 class="text-lg font-semibold mb-2">Situation</h2>
+                            <p class="text-gray-600 text-lg">
+                                A few years back, I worked with a food packaging company that was thriving on Google Ads, but our organic traffic was barely crawling. The website's conversion rate sat at a depressing 1.8%, and visitors weren’t sticking around, averaging just 2.1 pages per session. Management, understandably, wanted a more balanced traffic source—50% organic and 50% paid. The low engagement metrics made it clear: we had a visibility problem in search engines, and even when we did show up, we weren’t convincing visitors to stay and convert. It was time for a serious SEO intervention.                            </div>
+                    </div>
+                    <!-- Feature Item 2 -->
+                    <div class="content gradient-border flex items-center feature-item">
+                        <div class="icon-placeholder">
+                            <img src="image/2.png" alt="Icon 2" class="w-full h-full object-cover rounded-full">
+                        </div>
+                        <div class="text-content">
+                            <h2 class="text-lg font-semibold mb-2">Objectives</h2>
+                            <p class="text-gray-600 text-lg">
+                                With clear marching orders from above, we set measurable objectives. Organic conversion rate needed to hit 5% within a year. We aimed to have 80% of our pages indexed by Google, bring page load speed up to a solid 90+ out of 100, and reduce the bounce rate from 60% to 40%. Oh, and let’s not forget keyword rankings—we needed to move up the SERPs, targeting at least 20-50 keywords on the first two pages of Google. No pressure, right? But we knew that a structured on-page SEO approach could get us there if we stuck to the fundamentals and executed well.                            </div>
+                    </div>
+                    <!-- Feature Item 3 -->
+                    <div class="content gradient-border flex items-center feature-item">
+                        <div class="icon-placeholder">
+                            <img src="image/3.png" alt="Icon 3" class="w-full h-full object-cover rounded-full">
+                        </div>
+                        <div class="text-content">
+                            <h2 class="text-lg font-semibold mb-2">Actions Taken</h2>
+                            <p class="text-gray-600 text-lg">
+                                We got to work. First, we revamped the website’s structure, methodically adding meta tags, H1s, and proper schema markup. We conducted a deep dive into keyword research, integrating relevant and long-tail keywords across content, URLs, and headings. Images got alt text (because Google can’t see but sure can read), and we enriched pages with trust signals—reviews, testimonials, and structured snippets. Internal linking became our obsession, turning scattered pages into a cohesive network. Page speed improvements involved image compression, code minification, and a bit of tough love on unnecessary scripts. It was slow, meticulous work, but every tweak brought us closer to our goal.                             </div>
+                    </div>
+                    <!-- Feature Item 4 -->
+                    <div class="content gradient-border flex items-center feature-item">
+                        <div class="icon-placeholder">
+                            <img src="image/4.png" alt="Icon 4" class="w-full h-full object-cover rounded-full">
+                        </div>
+                        <div class="text-content">
+                            <h2 class="text-lg font-semibold mb-2">Results</h2>
+                            <p class="text-gray-600 text-lg">
+                                The results? Well worth the effort. Organic traffic climbed from 35% to 49% within nine months. Our conversion rate from organic users surged to 8% in just six months. Google gave us a nod of approval by indexing 90% of our pages. Page load speed? We hit 88 out of 100—just shy of our target, but still a massive improvement. The bounce rate took a much-needed dive, and our keyword rankings saw steady upward movement. Overall, it proved that SEO, when done right, isn’t just about ranking—it’s about engagement, conversions, and long-term sustainability. A well-optimized site isn’t just for search engines—it’s for people. And when you get both sides happy, that’s when the magic happens.                        </div>
+                    </div>
+    
     </div>
 
     <!-- Bottom Form Section -->
