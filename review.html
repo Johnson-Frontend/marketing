@@ -777,6 +777,34 @@
         p {
             font-size: 18px; /* Set font size of paragraphs to 18px */
         }
+        .icon-placeholder {
+    width: 20%; /* Changed from previous width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px; /* Add margin to the right of the icon */
+}
+.text-content {
+    width: 70%; /* Ensure text takes 70% of the container */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.6; /* Increase line height for better readability */
+    /* ...existing styles... */
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+}
+
+/* Optional: Adjust image size within the icon-placeholder if necessary */
+.icon-placeholder img {
+    width: 60%; /* Adjust as needed */
+    height: auto;
+}
 
     </style>
 </head>
@@ -867,13 +895,62 @@
     </div>
 
     <!-- New Section -->
-    <div class="content">
-        <h2 class="business-case-heading">Business Case</h2>
+     
+   <!-- Insert star_email.html content above the form section -->
+   <div class="content">
+    <main class="container mx-auto py-8">
+        <!-- Features Section -->
+        <h2 class="business-case-heading">Case in Action</h2>
         <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
-    </div>
+        
+        <!-- Feature Item 1 -->
+        <div class="content gradient-border flex items-center feature-item">
+            <div class="icon-placeholder">
+                <img src="image/1.png" alt="Icon 1" class="w-full h-full object-cover rounded-full">
+            </div>
+            <div class="text-content">
+                <h2 class="text-lg font-semibold mb-2">Situation</h2>
+                <p class="text-gray-600 text-lg">
+                    When I first jumped into the 3D printing industry as a marketer, I quickly realized something: this was not just another product category—this was a tech-heavy, troubleshooting-filled, customer-rant-prone battlefield. And guess what? Our brand was smack in the middle of a huge crisis. Someone (maybe a competitor, maybe an unlucky user, who knows) shared images of one of our machines allegedly setting their house on fire. Naturally, it spread across Facebook groups and Reddit threads like wildfire—pun intended. We had to act fast before our reputation turned to ash.            </div>
+        </div>
+
+        <!-- Feature Item 2 -->
+        <div class="content gradient-border flex items-center feature-item">
+            <div class="icon-placeholder">
+                <img src="image/2.png" alt="Icon 2" class="w-full h-full object-cover rounded-full">
+            </div>
+            <div class="text-content">
+                <h2 class="text-lg font-semibold mb-2">Tasks</h2>
+                <p class="text-gray-600 text-lg">
+                    My mission was clear—restore trust, improve brand perception, and turn online chaos into constructive engagement. I set clear metrics: improve response time, increase positive mentions, and boost customer engagement. That meant turning angry rants into helpful conversations and making sure actual brand advocates were louder than the haters. But this wasn’t just a one-person job—I needed a solid team, and fast.            </div>
+        </div>
+
+        <!-- Feature Item 3 -->
+        <div class="content gradient-border flex items-center feature-item">
+            <div class="icon-placeholder">
+                <img src="image/3.png" alt="Icon 3" class="w-full h-full object-cover rounded-full">
+            </div>
+            <div class="text-content">
+                <h2 class="text-lg font-semibold mb-2">Actions</h2>
+                <p class="text-gray-600 text-lg">
+                    We set up Google Alerts, monitored every corner of social media, and built a system to tackle issues head-on. I worked with customer service, product development, social media specialists, and even our copywriting team to craft responses that felt human (and not like a PR robot). We didn’t just respond to complaints—we engaged. We did live Q&A sessions, tackled misinformation in real time, and turned social media into a customer support powerhouse. The goal? Be so proactive that people trusted us before they even bought our machines            </div>
+        </div>
+
+        <!-- Feature Item 4 -->
+        <div class="content gradient-border flex items-center feature-item">
+            <div class="icon-placeholder">
+                <img src="image/4.png" alt="Icon 4" class="w-full h-full object-cover rounded-full">
+            </div>
+            <div class="text-content">
+                <h2 class="text-lg font-semibold mb-2">Results</h2>
+                <p class="text-gray-600 text-lg">
+                    Slowly but surely, the tide turned. Positive mentions started outnumbering negative ones, customer engagement shot up, and—most importantly—our sales rebounded. Instead of seeing us as the brand with “fire hazards,” people started seeing us as a brand that listens and acts. By owning the conversation, we didn’t just survive the crisis—we built a community that actually trusted us. And that, my friends, is how you turn a PR nightmare into a marketing win.
+                </p>
+            </div>
+        </div>
+    </main>
+</div>
+
 
     <!-- Bottom Form Section -->
     <div class="form-section">
