@@ -778,6 +778,37 @@
             font-size: 18px; /* Set font size of paragraphs to 18px */
         }
 
+
+        .icon-placeholder {
+    width: 20%; /* Changed from previous width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px; /* Add margin to the right of the icon */
+}
+.text-content {
+    width: 70%; /* Ensure text takes 70% of the container */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.6; /* Increase line height for better readability */
+    /* ...existing styles... */
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+}
+
+/* Optional: Adjust image size within the icon-placeholder if necessary */
+.icon-placeholder img {
+    width: 60%; /* Adjust as needed */
+    height: auto;
+}
+
+
     </style>
 </head>
 <body>
@@ -867,13 +898,65 @@
     </div>
 
     <!-- New Section -->
-    <div class="content">
-        <h2 class="business-case-heading">Business Case</h2>
-        <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
+     <!-- Insert star_email.html content above the form section -->
+     <div class="content">
+        <main class="container mx-auto py-8">
+            <!-- Features Section -->
+            <h2 class="business-case-heading">Case in Action</h2>
+            <br>
+            
+            <!-- Feature Item 1 -->
+            <div class="content gradient-border flex items-center feature-item">
+                <div class="icon-placeholder">
+                    <img src="image/1.png" alt="Icon 1" class="w-full h-full object-cover rounded-full">
+                </div>
+                <div class="text-content">
+                    <h2 class="text-lg font-semibold mb-2">Situation</h2>
+                    <p class="text-gray-600 text-lg">
+                        A few years ago, I joined a 3D printing company as a marketing supervisor, overseeing social media and email marketing. The management had been watching competitors use social media to educate, engage, and convert customers while we, well… did nothing. No engagement, no compelling copy—just silence. That’s where I stepped in. We knew we had to boost our online presence, sharpen our email marketing, and start speaking to our audience in a way that actually made them listen (and hopefully buy).                </p>
+                </div>
+            </div>
+    
+            <!-- Feature Item 2 -->
+            <div class="content gradient-border flex items-center feature-item">
+                <div class="icon-placeholder">
+                    <img src="image/2.png" alt="Icon 2" class="w-full h-full object-cover rounded-full">
+                </div>
+                <div class="text-content">
+                    <h2 class="text-lg font-semibold mb-2">Tasks</h2>
+                    <p class="text-gray-600 text-lg">
+                        The goal was simple: Make our words sell. We needed to establish a brand voice, create compelling social media and email content, and drive engagement. Metrics-wise, I wanted to improve our email open rates (starting at a sad 1.1%) and increase social media interactions. To get there, I broke things down: research relevant topics and keywords, optimize copywriting strategies, integrate visuals and emojis, and always tie content back to offers. It wasn’t just about writing more—it was about writing better.                </p>
+                </div>
+            </div>
+    
+            <!-- Feature Item 3 -->
+            <div class="content gradient-border flex items-center feature-item">
+                <div class="icon-placeholder">
+                    <img src="image/3.png" alt="Icon 3" class="w-full h-full object-cover rounded-full">
+                </div>
+                <div class="text-content">
+                    <h2 class="text-lg font-semibold mb-2">Actions</h2>
+                    <p class="text-gray-600 text-lg">
+                        I experimented with different copywriting techniques: benefits over features, emotions over specs, and balancing gut instinct with data. We established a distinct brand voice—something that actually sounded human, not like a user manual. Every email and post became more engaging, with a mix of storytelling, humor, and the occasional well-placed emoji. And while segmentation wasn’t an option back then, I found ways to tweak subject lines and CTAs to drive higher engagement. Meanwhile, on Facebook, I crafted posts that sparked conversation instead of just announcing promotions.                </p>
+                </div>
+            </div>
+    
+            <!-- Feature Item 4 -->
+            <div class="content gradient-border flex items-center feature-item">
+                <div class="icon-placeholder">
+                    <img src="image/4.png" alt="Icon 4" class="w-full h-full object-cover rounded-full">
+                </div>
+                <div class="text-content">
+                    <h2 class="text-lg font-semibold mb-2">Results</h2>
+                    <p class="text-gray-600 text-lg">
+                        Five months in, the numbers started speaking for themselves. Our email open rate climbed to 2% from 1.1%—a small but meaningful improvement without segmentation tools. But the real highlight? One of our Facebook posts hit 1 million views! Engagement in Facebook groups took off, and we started seeing real conversations instead of crickets. The lesson? Good copy isn’t just about what you write—it’s about how you make people feel. And once you find your voice, your audience actually listens.
+    
+                    </p>
+                </div>
+            </div>
+        </main>
     </div>
+    
 
     <!-- Bottom Form Section -->
     <div class="form-section">
