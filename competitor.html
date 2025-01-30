@@ -778,6 +778,38 @@
             font-size: 18px; /* Set font size of paragraphs to 18px */
         }
 
+        .icon-placeholder {
+    width: 20%; /* Changed from previous width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px; /* Add margin to the right of the icon */
+}
+.text-content {
+    width: 70%; /* Ensure text takes 70% of the container */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.6; /* Increase line height for better readability */
+    /* ...existing styles... */
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+}
+
+/* Optional: Adjust image size within the icon-placeholder if necessary */
+.icon-placeholder img {
+    width: 60%; /* Adjust as needed */
+    height: auto;
+}
+
+
+
+
     </style>
 </head>
 <body>
@@ -867,13 +899,86 @@
     </div>
 
     <!-- New Section -->
-    <div class="content">
-        <h2 class="business-case-heading">Business Case</h2>
+<!-- Insert star_email.html content above the form section -->
+<div class="content">
+    <main class="container mx-auto py-8">
+        <!-- Features Section -->
+        <h2 class="business-case-heading">Case in Action</h2>
         <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
-    </div>
+
+        <!-- Feature Item 1: Situation -->
+        <div class="content gradient-border flex items-center feature-item">
+            <div class="icon-placeholder">
+                <img src="image/1.png" alt="Icon 1" class="w-full h-full object-cover rounded-full">
+            </div>
+            <div class="text-content">
+                <h2 class="text-lg font-semibold mb-2">Situation</h2>
+                <p class="text-gray-600 text-lg">
+                    A few years ago, I was running marketing for a jewelry company, and let me tell you—it was the wild west out there. 
+                    Every time we leveled up our offer, suppliers would swoop in, copy it, and somehow make it cheaper. It felt less like a business 
+                    and more like an endless game of “Monkey See, Monkey Do.” 
+              
+                    After watching this ridiculous cycle, I thought: What if we stopped playing copycat and started playing chess? Instead of just tweaking products, 
+                    why not upgrade how we positioned ourselves entirely?
+                </p>
+            </div>
+        </div>
+
+        <!-- Feature Item 2: Tasks -->
+        <div class="content gradient-border flex items-center feature-item">
+            <div class="icon-placeholder">
+                <img src="image/2.png" alt="Icon 2" class="w-full h-full object-cover rounded-full">
+            </div>
+            <div class="text-content">
+                <h2 class="text-lg font-semibold mb-2">Tasks</h2>
+                <p class="text-gray-600 text-lg">
+                    To escape the price war, we needed to move from “just another supplier” to a brand that customers actually trusted and valued. That meant real differentiation. 
+                    So, we did what any marketing nerd would do—we pulled out the big guns: SWOT analysis to find gaps, 7Ps analysis to fine-tune our strategy, 
+                    and probably way too many PowerPoint slides.
+          
+                    The goal? A complete transformation—new branding, refined pricing strategy, a better customer experience, and a move away from cluttered marketplaces 
+                    to our very own online store.
+                </p>
+            </div>
+        </div>
+
+        <!-- Feature Item 3: Actions -->
+        <div class="content gradient-border flex items-center feature-item">
+            <div class="icon-placeholder">
+                <img src="image/3.png" alt="Icon 3" class="w-full h-full object-cover rounded-full">
+            </div>
+            <div class="text-content">
+                <h2 class="text-lg font-semibold mb-2">Actions</h2>
+                <p class="text-gray-600 text-lg">
+                    We rolled up our sleeves and overhauled everything—brand image, positioning, pricing, promotion, customer experience, and even our sales channels. 
+                    No more fighting on overcrowded platforms where people only cared about price.
+             
+                    We took control by building our own website, offering a premium experience, and giving customers a reason to choose us beyond just cost. 
+                    Slowly but surely, our customers followed. And because they trusted our brand, we could increase prices by 40% while still keeping them happy. 
+                    More profit, better service, and no more race to the bottom.
+                </p>
+            </div>
+        </div>
+
+        <!-- Feature Item 4: Results -->
+        <div class="content gradient-border flex items-center feature-item">
+            <div class="icon-placeholder">
+                <img src="image/4.png" alt="Icon 4" class="w-full h-full object-cover rounded-full">
+            </div>
+            <div class="text-content">
+                <h2 class="text-lg font-semibold mb-2">Results</h2>
+                <p class="text-gray-600 text-lg">
+                    The shift paid off—big time. With customers buying directly from us, we weren’t at the mercy of price-slashing competitors anymore. 
+                    That extra 40% margin meant we could reinvest in service, quality, and marketing.
+             
+                    Instead of constantly reacting to what others were doing, we became the ones setting the standard. Lesson learned? Competing on price is a never-ending headache. 
+                    But owning your brand, your customer relationships, and your channels? That’s where the real power (and profit) is.
+                </p>
+            </div>
+        </div>
+
+    </main>
+</div>
 
     <!-- Bottom Form Section -->
     <div class="form-section">
