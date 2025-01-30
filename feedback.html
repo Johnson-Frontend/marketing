@@ -777,6 +777,35 @@
         p {
             font-size: 18px; /* Set font size of paragraphs to 18px */
         }
+        .icon-placeholder {
+    width: 20%; /* Changed from previous width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px; /* Add margin to the right of the icon */
+}
+.text-content {
+    width: 70%; /* Ensure text takes 70% of the container */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.6; /* Increase line height for better readability */
+    /* ...existing styles... */
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+}
+
+/* Optional: Adjust image size within the icon-placeholder if necessary */
+.icon-placeholder img {
+    width: 60%; /* Adjust as needed */
+    height: auto;
+}
+
 
     </style>
 </head>
@@ -866,15 +895,69 @@
         </div>
     </div>
 
-    <!-- New Section -->
-    <div class="content">
-        <h2 class="business-case-heading">Business Case</h2>
+<!-- Insert star_email.html content above the form section -->
+<div class="content">
+    <main class="container mx-auto py-8">
+        <!-- Features Section -->
+        <h2 class="business-case-heading">Case in Action</h2>
         <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
-    </div>
+        
+        <!-- Feature Item 1 -->
+        <div class="content gradient-border flex items-center feature-item">
+            <div class="icon-placeholder">
+                <img src="image/1.png" alt="Icon 1" class="w-full h-full object-cover rounded-full">
+            </div>
+            <div class="text-content">
+                <h2 class="text-lg font-semibold mb-2">Situation</h2>
+                <p class="text-gray-600 text-lg">
+                    In 2022, I worked at a packaging company facing a perfect storm—inventory levels kept climbing, conversion rates stayed stagnant, and customer complaints flooded in like spam emails after signing up for a "free" trial. Management, in a classic move, looked at the marketing team and said, "Fix it." No roadmap, no specifics, just a desperate hope that we’d pull a rabbit out of a hat. My task? Design, define, carry out, and implement a structured feedback system to figure out where things were going wrong.
+                </p>
+            </div>
+        </div> <!-- Closing feature-item -->
 
+        <!-- Feature Item 2 -->
+        <div class="content gradient-border flex items-center feature-item">
+            <div class="icon-placeholder">
+                <img src="image/2.png" alt="Icon 2" class="w-full h-full object-cover rounded-full">
+            </div>
+            <div class="text-content">
+                <h2 class="text-lg font-semibold mb-2">Tasks</h2>
+                <p class="text-gray-600 text-lg">
+                    The goal was clear: gather meaningful customer insights, improve the buying experience, and ultimately increase conversions. I needed to build a system that collected real, actionable feedback, not just the usual "Your call is very important to us" nonsense. The challenge? Marketing wasn’t exactly equipped for deep customer research, and securing team buy-in for major changes was like convincing a cat to take a bath.
+                </p>
+            </div>
+        </div> <!-- Closing feature-item -->
+
+        <!-- Feature Item 3 -->
+        <div class="content gradient-border flex items-center feature-item">
+            <div class="icon-placeholder">
+                <img src="image/3.png" alt="Icon 3" class="w-full h-full object-cover rounded-full">
+            </div>
+            <div class="text-content">
+                <h2 class="text-lg font-semibold mb-2">Actions</h2>
+                <p class="text-gray-600 text-lg">
+                    I went all in—launched website widgets, live chat, improved contact forms, boosted customer service calls, gathered on-site feedback, monitored Google reviews, implemented email follow-ups, and even brought in a third-party consultant. Five months of blood, sweat, and customer complaints later, the consultant proved to be the game-changer. I met with them, asked the hard questions, got buy-in from leadership, and we revamped everything: website copy, UI/UX, product recommendations—basically gave our digital presence a full-blown makeover.
+                </p>
+            </div>
+        </div> <!-- Closing feature-item -->
+
+        <!-- Feature Item 4 -->
+        <div class="content gradient-border flex items-center feature-item">
+            <div class="icon-placeholder">
+                <img src="image/4.png" alt="Icon 4" class="w-full h-full object-cover rounded-full">
+            </div>
+            <div class="text-content">
+                <h2 class="text-lg font-semibold mb-2">Results</h2>
+                <p class="text-gray-600 text-lg">
+                    The impact? A 70% increase in conversion rates post-implementation. Customers found what they needed faster, complaints dropped, and suddenly, inventory wasn’t a problem—it was a necessity. The biggest takeaway? We made consulting an annual process because flying blind on customer experience is just asking for trouble. Moral of the story: when your customers are talking, listen—before they start shouting.
+                </p>
+            </div>
+        </div> <!-- Closing feature-item -->
+
+    </main>
+</div>
+
+    
     <!-- Bottom Form Section -->
     <div class="form-section">
         <h2>Keep in Touch</h2>
