@@ -777,6 +777,34 @@
         p {
             font-size: 18px; /* Set font size of paragraphs to 18px */
         }
+        .icon-placeholder {
+    width: 20%; /* Changed from previous width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px; /* Add margin to the right of the icon */
+}
+.text-content {
+    width: 70%; /* Ensure text takes 70% of the container */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.6; /* Increase line height for better readability */
+    /* ...existing styles... */
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+}
+
+/* Optional: Adjust image size within the icon-placeholder if necessary */
+.icon-placeholder img {
+    width: 60%; /* Adjust as needed */
+    height: auto;
+}
 
     </style>
 </head>
@@ -867,13 +895,55 @@
     </div>
 
     <!-- New Section -->
-    <div class="content">
-        <h2 class="business-case-heading">Business Case</h2>
+   <!-- Insert star_email.html content above the form section -->
+   <div class="content">
+    <main class="container mx-auto py-8">
+        <!-- Features Section -->
+        <h2 class="business-case-heading">Case in Action</h2>
         <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
-    </div>
+                <!-- Feature Item 1 -->
+                <div class="content gradient-border flex items-center feature-item">
+                    <div class="icon-placeholder">
+                        <img src="image/1.png" alt="Icon 1" class="w-full h-full object-cover rounded-full">
+                    </div>
+                    <div class="text-content">
+                        <h2 class="text-lg font-semibold mb-2">Situation</h2>
+                        <p class="text-gray-600 text-lg">
+                            A few years ago, when I was with a printing company, our business was practically invisible—at least to Google. We were pouring money into ads, but the conversion rate was embarrassing. Management would search for our products, and… nothing. It was like we didn’t exist. That’s when it hit us: We were just renting traffic, and rent was getting expensive. It was time to own our audience.                            </div>
+                </div>
+                <!-- Feature Item 2 -->
+                <div class="content gradient-border flex items-center feature-item">
+                    <div class="icon-placeholder">
+                        <img src="image/2.png" alt="Icon 2" class="w-full h-full object-cover rounded-full">
+                    </div>
+                    <div class="text-content">
+                        <h2 class="text-lg font-semibold mb-2">Objectives</h2>
+                        <p class="text-gray-600 text-lg">
+                            The plan was simple—build organic traffic through blogging and make sure people actually found us when they searched. We set clear goals: get at least 50 views per blog within three months, publish three blogs a month, and optimize each post with at least ten targeted keywords. Internal links were a must, at least five per blog, to keep visitors moving through our content. We also tracked bounce rates, keyword rankings, and pages per session to make sure our efforts weren’t just throwing words into the void.                            </div>
+                </div>
+                <!-- Feature Item 3 -->
+                <div class="content gradient-border flex items-center feature-item">
+                    <div class="icon-placeholder">
+                        <img src="image/3.png" alt="Icon 3" class="w-full h-full object-cover rounded-full">
+                    </div>
+                    <div class="text-content">
+                        <h2 class="text-lg font-semibold mb-2">Tasks</h2>
+                        <p class="text-gray-600 text-lg">
+                            We kicked off with deep keyword and topic research, making sure every blog post had a real shot at ranking. Then we got to work—writing, publishing, and pushing each post across social media, email, and anywhere else people might find it. To keep visitors engaged, we built a strong internal linking strategy, making sure readers always had a reason to click through to another page instead of bouncing out.                            </div>
+                </div>
+                <!-- Feature Item 4 -->
+                <div class="content gradient-border flex items-center feature-item">
+                    <div class="icon-placeholder">
+                        <img src="image/4.png" alt="Icon 4" class="w-full h-full object-cover rounded-full">
+                    </div>
+                    <div class="text-content">
+                        <h2 class="text-lg font-semibold mb-2">Results</h2>
+                        <p class="text-gray-600 text-lg">
+                            The numbers spoke for themselves. Within a year, organic traffic jumped from 38% to 50%. We stuck to the plan and didn’t miss a beat—three blogs a month, every month. The best part? Our conversion rate nearly doubled, climbing from 2% to 4.8% over eighteen months. We went from “Who?” to “Oh yeah, I’ve seen their stuff,” and that’s when we knew we had done it right.
+                            Lesson learned? Don’t just throw money at ads and hope for the best. A solid content strategy is like compound interest—it might start slow, but the long-term payoff is worth it.                        </div>
+                </div>
+
+</div>
 
     <!-- Bottom Form Section -->
     <div class="form-section">
