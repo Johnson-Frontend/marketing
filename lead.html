@@ -778,6 +778,39 @@
             font-size: 18px; /* Set font size of paragraphs to 18px */
         }
 
+        .icon-placeholder {
+    width: 20%; /* Changed from previous width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px; /* Add margin to the right of the icon */
+}
+.text-content {
+    width: 70%; /* Ensure text takes 70% of the container */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.6; /* Increase line height for better readability */
+    /* ...existing styles... */
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+}
+
+/* Optional: Adjust image size within the icon-placeholder if necessary */
+.icon-placeholder img {
+    width: 60%; /* Adjust as needed */
+    height: auto;
+}
+
+
+
+
+
     </style>
 </head>
 <body>
@@ -868,13 +901,87 @@
     </div>
 
     <!-- New Section -->
-    <div class="content">
-        <h2 class="business-case-heading">Business Case</h2>
+<!-- Insert star_email.html content above the form section -->
+<div class="content">
+    <main class="container mx-auto py-8">
+        <!-- Features Section -->
+        <h2 class="business-case-heading">Case in Action</h2>
         <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
-    </div>
+
+        <!-- Feature Item 1: Situation -->
+        <div class="content gradient-border flex items-center feature-item">
+            <div class="icon-placeholder">
+                <img src="image/1.png" alt="Icon 1" class="w-full h-full object-cover rounded-full">
+            </div>
+            <div class="text-content">
+                <h2 class="text-lg font-semibold mb-2">Situation</h2>
+                <p class="text-gray-600 text-lg">
+                    A few years ago, when I joined a 3D printing company, we had a realization that was both exciting and mildly panic-inducing—our competitors were using 
+                    crowdfunding platforms like Kickstarter and Indiegogo to not only attract attention but also sell and distribute their latest product launches. 
+                    It wasn’t just marketing; it was a full-fledged sales channel.
+        
+                    Leadership saw the potential and tasked me with creating a landing page and an email marketing strategy to convert curious visitors into backers, 
+                    even if they weren’t quite ready to commit. The challenge was clear: make our product irresistible, build trust, and guide hesitant prospects toward action.
+                </p>
+            </div>
+        </div>
+
+        <!-- Feature Item 2: Tasks -->
+        <div class="content gradient-border flex items-center feature-item">
+            <div class="icon-placeholder">
+                <img src="image/2.png" alt="Icon 2" class="w-full h-full object-cover rounded-full">
+            </div>
+            <div class="text-content">
+                <h2 class="text-lg font-semibold mb-2">Tasks</h2>
+                <p class="text-gray-600 text-lg">
+                    We set ambitious yet attainable goals. To gauge engagement, we aimed for an average session duration of two minutes, ensuring visitors actually took 
+                    the time to absorb our pitch. Lead generation was a priority, with a target of 2,000 potential backers signing up for updates and exclusive perks.
+              
+                    The real test, however, was securing 100 committed backers and generating at least $11,000 in revenue—enough to prove this was a viable approach for 
+                    future product launches.
+                </p>
+            </div>
+        </div>
+
+        <!-- Feature Item 3: Actions -->
+        <div class="content gradient-border flex items-center feature-item">
+            <div class="icon-placeholder">
+                <img src="image/3.png" alt="Icon 3" class="w-full h-full object-cover rounded-full">
+            </div>
+            <div class="text-content">
+                <h2 class="text-lg font-semibold mb-2">Actions</h2>
+                <p class="text-gray-600 text-lg">
+                    With those objectives in mind, I designed a landing page packed with compelling elements—testimonials from early adopters, a breakdown of key 
+                    product features, and persuasive copy that made backing the project feel like an opportunity rather than a risk.
+               
+                    We integrated a seamless contact form to capture leads efficiently and rolled out an email marketing strategy that segmented users based on their 
+                    level of interest. Some received educational content to nurture them, while others got direct calls to action to back the project. 
+                    The messaging was carefully crafted to address doubts, build excitement, and nudge potential buyers over the edge.
+                </p>
+            </div>
+        </div>
+
+        <!-- Feature Item 4: Results -->
+        <div class="content gradient-border flex items-center feature-item">
+            <div class="icon-placeholder">
+                <img src="image/4.png" alt="Icon 4" class="w-full h-full object-cover rounded-full">
+            </div>
+            <div class="text-content">
+                <h2 class="text-lg font-semibold mb-2">Results</h2>
+                <p class="text-gray-600 text-lg">
+                    Over two months, the results spoke for themselves. We secured more than 1,500 leads, slightly under our original goal but still a strong pipeline. 
+                    The campaign converted 106 backers, surpassing our target, and brought in $89,872 in sales revenue—far beyond expectations.
+                
+                    Unfortunately, due to unforeseen technical issues, the project was ultimately canceled and postponed. But from a marketing perspective, 
+                    the experiment was a resounding success. It proved that with the right mix of strategy, storytelling, and execution, even a hesitant audience 
+                    could be turned into passionate supporters.
+                </p>
+            </div>
+        </div>
+
+    </main>
+</div>
+
 
     <!-- Bottom Form Section -->
     <div class="form-section">
@@ -882,6 +989,7 @@
         <form></form>
             <input type="text" placeholder="Your Name">
             <input type="email" placeholder="Your Email">
+            <br>
             <button type="submit">Sign Up</button>
         </form>
     </div>
