@@ -778,6 +778,35 @@
             font-size: 18px; /* Set font size of paragraphs to 18px */
         }
 
+        .icon-placeholder {
+    width: 20%; /* Changed from previous width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px; /* Add margin to the right of the icon */
+}
+.text-content {
+    width: 70%; /* Ensure text takes 70% of the container */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.6; /* Increase line height for better readability */
+    /* ...existing styles... */
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+}
+
+/* Optional: Adjust image size within the icon-placeholder if necessary */
+.icon-placeholder img {
+    width: 60%; /* Adjust as needed */
+    height: auto;
+}
+
     </style>
 </head>
 <body>
@@ -867,13 +896,67 @@
     </div>
 
     <!-- New Section -->
-    <div class="content">
-        <h2 class="business-case-heading">Business Case</h2>
+   <!-- Insert star_email.html content above the form section -->
+   <div class="content">
+    <main class="container mx-auto py-8">
+        <!-- Features Section -->
+        <h2 class="business-case-heading">Case in Action</h2>
         <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
-    </div>
+        
+        <!-- Feature Item 1 -->
+        <div class="content gradient-border flex items-center feature-item">
+            <div class="icon-placeholder">
+                <img src="image/1.png" alt="Icon 1" class="w-full h-full object-cover rounded-full">
+            </div>
+            <div class="text-content">
+                <h2 class="text-lg font-semibold mb-2">Situation</h2>
+                <p class="text-gray-600 text-lg">
+                    A few years back, I walked into a gift company as their new marketing supervisor, only to realize—uh-oh—we didn’t have a brand story. We had products, we had sales (mostly from Amazon), but zero identity. Management wanted to be the Apple of home lighting (a tiny ask, right?), yet customers bought once and vanished into the void. We couldn’t build a business on one-time Amazon shoppers forever. We needed our own store, our own ecosystem, and, most importantly, our own brand that actually meant something.
+                </p>
+            </div>
+        </div>
+
+        <!-- Feature Item 2 -->
+        <div class="content gradient-border flex items-center feature-item">
+            <div class="icon-placeholder">
+                <img src="image/2.png" alt="Icon 2" class="w-full h-full object-cover rounded-full">
+            </div>
+            <div class="text-content">
+                <h2 class="text-lg font-semibold mb-2">Objectives</h2>
+                <p class="text-gray-600 text-lg">
+                    Our goal? Transition from a faceless Amazon seller into the home lighting solution provider. And not just in a “buy our LEDs” way—but in a way that made people feel connected to our brand. To measure success, we embedded conversion rate tracking and an NPS system on our website and email campaigns. If customers loved us, we’d know. If they didn’t, well… we’d really know.
+                </p>
+            </div>
+        </div>
+
+        <!-- Feature Item 3 -->
+        <div class="content gradient-border flex items-center feature-item">
+            <div class="icon-placeholder">
+                <img src="image/3.png" alt="Icon 3" class="w-full h-full object-cover rounded-full">
+            </div>
+            <div class="text-content">
+                <h2 class="text-lg font-semibold mb-2">Tasks</h2>
+                <p class="text-gray-600 text-lg">
+                    So, we got to work. Copywriters shaped our voice, designers gave us a fresh look, and videographers created a killer company intro. We hammered out our mission, slogan, tagline, values, and even company culture—because a brand isn’t just for customers; it’s for employees too. This wasn’t just marketing fluff; it was about making people feel something when they saw our name.
+                </p>
+            </div>
+        </div>
+
+        <!-- Feature Item 4 -->
+        <div class="content gradient-border flex items-center feature-item">
+            <div class="icon-placeholder">
+                <img src="image/4.png" alt="Icon 4" class="w-full h-full object-cover rounded-full">
+            </div>
+            <div class="text-content">
+                <h2 class="text-lg font-semibold mb-2">Results</h2>
+                <p class="text-gray-600 text-lg">
+                    Eight months later, we put our shiny new brand to the test with a focus group. Turns out, customers actually cared now. They recognized us, trusted us, and—best of all—stuck around. Our NPS and brand loyalty shot up, and the conversion rate followed. We weren’t just selling LEDs anymore; we were building relationships. Lesson learned? Branding isn’t an overnight success, but when done right, it turns one-time buyers into lifelong fans.
+                </p>
+            </div>
+        </div>
+    </main>
+</div>
+
 
     <!-- Bottom Form Section -->
     <div class="form-section">
@@ -881,6 +964,7 @@
         <form></form>
             <input type="text" placeholder="Your Name">
             <input type="email" placeholder="Your Email">
+            <br>
             <button type="submit">Sign Up</button>
         </form>
     </div>
