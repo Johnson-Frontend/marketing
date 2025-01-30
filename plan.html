@@ -778,6 +778,40 @@
             font-size: 18px; /* Set font size of paragraphs to 18px */
         }
 
+        .icon-placeholder {
+    width: 20%; /* Changed from previous width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px; /* Add margin to the right of the icon */
+}
+.text-content {
+    width: 70%; /* Ensure text takes 70% of the container */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.6; /* Increase line height for better readability */
+    /* ...existing styles... */
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+}
+
+/* Optional: Adjust image size within the icon-placeholder if necessary */
+.icon-placeholder img {
+    width: 60%; /* Adjust as needed */
+    height: auto;
+}
+
+        
+
+
+        
+
     </style>
 </head>
 <body>
@@ -866,14 +900,67 @@
         </div>
     </div>
 
-    <!-- New Section -->
     <div class="content">
-        <h2 class="business-case-heading">Business Case</h2>
-        <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
-    </div>
+        <main class="container mx-auto py-8">
+          <!-- Features Section -->
+          <h2 class="business-case-heading">Case in Action</h2>
+          <br>
+      
+          <!-- Feature Item 1 -->
+          <div class="content gradient-border flex items-center feature-item">
+            <div class="icon-placeholder">
+              <img src="image/1.png" alt="Icon 1" class="w-full h-full object-cover rounded-full">
+            </div>
+            <div class="text-content">
+              <h2 class="text-lg font-semibold mb-2">Situation</h2>
+              <p class="text-gray-600 text-lg">
+                Picture this: Management wanted marketing to do everything—boost sales, support product development, fuel new store openings, and refine brand positioning. No pressure, right? Oh, and we had to double sales. That’s 100% growth in one year, just a small request. But hey, motivation was built in because our bonuses were tied to revenue. If we didn’t hit that target, there’d be a lot of sad marketers questioning their life choices. So, we got to work, crafting a complete, detailed marketing plan that would support sales in every way possible.
+              </p>
+            </div>
+          </div>
+      
+          <!-- Feature Item 2 -->
+          <div class="content gradient-border flex items-center feature-item">
+            <div class="icon-placeholder">
+              <img src="image/2.png" alt="Icon 2" class="w-full h-full object-cover rounded-full">
+            </div>
+            <div class="text-content">
+              <h2 class="text-lg font-semibold mb-2">Tasks</h2>
+              <p class="text-gray-600 text-lg">
+                We didn’t just set an ambitious target and hope for the best—we broke it down into actionable numbers. To hit 100% sales growth, we projected 3,500 new customers, a 5% conversion rate, and a serious increase in ad spend (200%!). We also allocated $10,000 for SEO because, well, what’s the point of a great website if nobody finds it? Our goal wasn’t just traffic; we wanted high-value customers. That’s where a mix of promotional strategy, product strategy, pricing optimization, and expanded distribution came in. Every dollar had to work hard.
+              </p>
+            </div>
+          </div>
+      
+          <!-- Feature Item 3 -->
+          <div class="content gradient-border flex items-center feature-item">
+            <div class="icon-placeholder">
+              <img src="image/3.png" alt="Icon 3" class="w-full h-full object-cover rounded-full">
+            </div>
+            <div class="text-content">
+              <h2 class="text-lg font-semibold mb-2">Actions</h2>
+              <p class="text-gray-600 text-lg">
+                We went heavy on paid ads but did it strategically—tracking every dollar to ensure returns. SEO? Check. We made sure organic traffic kept climbing, reducing long-term customer acquisition costs. Then came the fun part: seasonal gift-giving campaigns. For Christmas, every customer got a pack of custom-designed holiday cards, creating a feel-good brand moment. Our marketing was everywhere: supporting new locations, testing price strategies, and reinforcing our positioning. Every move was tied back to our main goal—sell more without throwing money away.
+              </p>
+            </div>
+          </div>
+      
+          <!-- Feature Item 4 -->
+          <div class="content gradient-border flex items-center feature-item">
+            <div class="icon-placeholder">
+              <img src="image/4.png" alt="Icon 4" class="w-full h-full object-cover rounded-full">
+            </div>
+            <div class="text-content">
+              <h2 class="text-lg font-semibold mb-2">Results</h2>
+              <p class="text-gray-600 text-lg">
+                By year-end, we didn’t just meet the 100% growth goal—we smashed it with 108% sales growth compared to 2022. The customer base expanded, loyalty rates improved, and conversion rates hit the target. Most importantly, marketing wasn’t seen as a “cost center” but as a revenue-driving powerhouse. And yes, the bonus checks looked very nice. More importantly, we learned that a well-structured marketing plan isn’t about spending big; it’s about spending smart.
+                Would I do anything differently? Maybe find a way to sneak in a personal vacation budget… but hey, that’s a plan for next year. 🚀
+              </p>
+            </div>
+          </div>
+      
+        </main>
+      </div>
 
     <!-- Bottom Form Section -->
     <div class="form-section">
