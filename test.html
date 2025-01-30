@@ -31,21 +31,19 @@
 
     /* Enhanced Purple Brush Stroke using a pseudo-element with SVG */
     .highlight-keyword::after {
-      content: '';
-      position: absolute;
-      top: 90%; /* Positioning the stroke below the keyword */
-      left: 50%;
-      width: 120%; /* Increased width for a longer stroke */
-      height: 80px; /* Increased height based on SVG */
-      transform: translateX(-50%) scaleX(0);
-      transform-origin: left;
-      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="350" height="50" viewBox="0 0 350 50"><path d="M0,25 C120,0 230,50 350,25" stroke="%239B30FF" stroke-width="10" fill="none" stroke-linecap="round"/></svg>');
-      background-size: contain;
-      background-repeat: no-repeat;
-      transition: transform 1s ease-out, opacity 1s ease-out;
-      pointer-events: none; /* Ensures the brush stroke doesn't interfere with text selection */
-      opacity: 0;
-    }
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 120%;
+  height: 5px;
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: left;
+  background: linear-gradient(to right, rgba(155, 48, 255, 0) 0%, rgba(155, 48, 255, 1) 50%, rgba(155, 48, 255, 0) 100%);
+  transition: transform 1s ease-out, opacity 1s ease-out;
+  opacity: 0;
+}
+
 
     /* Animation class to trigger the brush stroke */
     .highlight-keyword.animate::after {
@@ -70,7 +68,7 @@
       Paragraph 2: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
     </p>
     <p>
-      Paragraph 3: This is the important <span class="highlight-keyword">Keyword</span> that needs to be highlighted.
+      Paragraph 3: This is the important <span class="highlight-keyword">Keyword that</span> that needs to be highlighted.
     </p>
   </div>
 
