@@ -1,21 +1,113 @@
-<!-- test.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Sticky Header Test</title>
-  <!-- Link to your header.css -->
-  <link rel="stylesheet" href="header.css">
+  <meta charset="UTF-8">
+  <title>Scroll Highlight Effect with Enhanced Purple Brush Stroke</title>
+  <style>
+    /* Inline CSS */
+
+    /* Basic styling for the body */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      padding: 50px;
+      margin: 0;
+      background-color: #f9f9f9;
+    }
+
+    /* Styling for the content paragraphs */
+    .content p {
+      margin-bottom: 100vh; /* Adds vertical space to enable scrolling */
+      font-size: 1.2em;
+      color: #333;
+    }
+
+    /* Highlight keyword styling */
+    .highlight-keyword {
+      position: relative;
+      display: inline-block;
+      cursor: pointer; /* Optional: changes cursor to indicate interactivity */
+    }
+
+    /* Enhanced Purple Brush Stroke using a pseudo-element with SVG */
+    .highlight-keyword::after {
+      content: '';
+      position: absolute;
+      top: 90%; /* Positioning the stroke below the keyword */
+      left: 50%;
+      width: 120%; /* Increased width for a longer stroke */
+      height: 80px; /* Increased height based on SVG */
+      transform: translateX(-50%) scaleX(0);
+      transform-origin: left;
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="350" height="50" viewBox="0 0 350 50"><path d="M0,25 C120,0 230,50 350,25" stroke="%239B30FF" stroke-width="10" fill="none" stroke-linecap="round"/></svg>');
+      background-size: contain;
+      background-repeat: no-repeat;
+      transition: transform 1s ease-out, opacity 1s ease-out;
+      pointer-events: none; /* Ensures the brush stroke doesn't interfere with text selection */
+      opacity: 0;
+    }
+
+    /* Animation class to trigger the brush stroke */
+    .highlight-keyword.animate::after {
+      transform: translateX(-50%) scaleX(1);
+      opacity: 2;
+    }
+
+    /* Optional: Add a slight rotation for a more dynamic effect */
+    .highlight-keyword.animate::after {
+      transform: translateX(-50%) scaleX(1) rotate(-5deg);
+    }
+
+  </style>
 </head>
 <body>
-  <!-- The header -->
-  <header class="sticky-header">
-    <h1 style="color: #fff;">Testing Sticky Header</h1>
-  </header>
 
-  <!-- Add enough content below to scroll -->
-  <div style="height: 2000px; background: #ddd; margin-top: 20px;">
-    <p style="padding: 20px;">Scroll down to see if the header sticks to the top</p>
+  <div class="content">
+    <p>
+      Paragraph 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+    <p>
+      Paragraph 2: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+    <p>
+      Paragraph 3: This is the important <span class="highlight-keyword">Keyword</span> that needs to be highlighted.
+    </p>
   </div>
+
+  <script>
+    // Inline JavaScript
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const keywords = document.querySelectorAll('.highlight-keyword');
+
+      // Function to check if the element is in the viewport
+      function isInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+          rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.bottom >= 0
+        );
+      }
+
+      // Function to add animation class when in viewport
+      function handleScroll() {
+        keywords.forEach(keyword => {
+          if (isInViewport(keyword) && !keyword.classList.contains('animate')) {
+            keyword.classList.add('animate');
+            // Optionally, remove the scroll listener if you only want the animation once
+            // Uncomment the line below if you want the animation to trigger only once
+            // window.removeEventListener('scroll', handleScroll);
+          }
+        });
+      }
+
+      // Listen for scroll events
+      window.addEventListener('scroll', handleScroll);
+
+      // Initial check in case the element is already in view
+      handleScroll();
+    });
+  </script>
+
 </body>
 </html>
