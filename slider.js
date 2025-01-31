@@ -67,4 +67,52 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   
   console.log("Slider initialized successfully.");
+  
+  // Auto-slide functionality
+  let currentSlide = 0;
+  let slideInterval;
+  const slides = document.querySelectorAll('#banner-slider img');
+  const intervalTime = 2000; // Time between slides in milliseconds
+
+  function startSlideShow() {
+      slideInterval = setInterval(() => {
+          nextSlide();
+      }, intervalTime);
+  }
+
+  function stopSlideShow() {
+      clearInterval(slideInterval);
+  }
+
+  function nextSlide() {
+      slides[currentSlide].classList.remove('active');
+      currentSlide = (currentSlide + 1) % slides.length;
+      slides[currentSlide].classList.add('active');
+  }
+
+  function prevSlide() {
+      slides[currentSlide].classList.remove('active');
+      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+      slides[currentSlide].classList.add('active');
+  }
+
+  // Event listeners for manual navigation
+  document.querySelector('.slider-btn.left').addEventListener('click', () => {
+      stopSlideShow();
+      prevSlide();
+      startSlideShow();
+  });
+
+  document.querySelector('.slider-btn.right').addEventListener('click', () => {
+      stopSlideShow();
+      nextSlide();
+      startSlideShow();
+  });
+
+  // Start the slideshow when the page loads
+  document.addEventListener('DOMContentLoaded', startSlideShow);
+
+  // Optional: Pause on hover
+  document.querySelector('#banner-slider').addEventListener('mouseenter', stopSlideShow);
+  document.querySelector('#banner-slider').addEventListener('mouseleave', startSlideShow);
 });
