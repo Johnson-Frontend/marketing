@@ -778,6 +778,36 @@
             font-size: 18px; /* Set font size of paragraphs to 18px */
         }
 
+        .icon-placeholder {
+    width: 20%; /* Changed from previous width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px; /* Add margin to the right of the icon */
+}
+.text-content {
+    width: 70%; /* Ensure text takes 70% of the container */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.6; /* Increase line height for better readability */
+    /* ...existing styles... */
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+}
+
+/* Optional: Adjust image size within the icon-placeholder if necessary */
+.icon-placeholder img {
+    width: 60%; /* Adjust as needed */
+    height: auto;
+}
+
+
     </style>
 </head>
 <body>
@@ -867,13 +897,87 @@
     </div>
 
     <!-- New Section -->
-    <div class="content">
-        <h2 class="business-case-heading">Business Case</h2>
+<!-- Insert star_email.html content above the form section -->
+<div class="content">
+    <main class="container mx-auto py-8">
+        <!-- Features Section -->
+        <h2 class="business-case-heading">Case in Action</h2>
         <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
-    </div>
+
+        <!-- Feature Item 1: Situation -->
+        <div class="content gradient-border flex items-center feature-item">
+            <div class="icon-placeholder">
+                <img src="image/1.png" alt="Icon 1" class="w-full h-full object-cover rounded-full">
+            </div>
+            <div class="text-content">
+                <h2 class="text-lg font-semibold mb-2">Situation</h2>
+                <p class="text-gray-600 text-lg">
+                    A few years ago, when I was working with a jewelry company, we handed over our Google Ads to a third-party agency, 
+                    thinking they'd sprinkle some digital magic on our campaigns. To their credit, the traffic came in, but sales? Meh. 
+                    Even when we threw more money at it, the results barely budged. It was like filling a leaky bucket—frustrating and expensive.
+              
+                    Eventually, we had an epiphany: "Why are we paying someone else to get mediocre results when we can do that ourselves… 
+                    or, you know, better?" So, we took back control.
+                </p>
+            </div>
+        </div>
+
+        <!-- Feature Item 2: Tasks -->
+        <div class="content gradient-border flex items-center feature-item">
+            <div class="icon-placeholder">
+                <img src="image/2.png" alt="Icon 2" class="w-full h-full object-cover rounded-full">
+            </div>
+            <div class="text-content">
+                <h2 class="text-lg font-semibold mb-2">Tasks</h2>
+                <p class="text-gray-600 text-lg">
+                    I was tasked with setting up 18 separate campaigns, each tailored to specific product categories and geographies. 
+                    We weren’t just throwing ads into the void—we had a clear goal: a 10:1 return on ad spend (ROAS), meaning every dollar 
+                    spent should bring in ten bucks in conversion value.
+             
+                    Realistically, after factoring in costs, we expected around 8:1, but hey, that still beats whatever we were getting before. 
+                    The plan was ambitious, but if you're going to bet on anyone, it might as well be yourself, right?
+                </p>
+            </div>
+        </div>
+
+        <!-- Feature Item 3: Actions -->
+        <div class="content gradient-border flex items-center feature-item">
+            <div class="icon-placeholder">
+                <img src="image/3.png" alt="Icon 3" class="w-full h-full object-cover rounded-full">
+            </div>
+            <div class="text-content">
+                <h2 class="text-lg font-semibold mb-2">Actions</h2>
+                <p class="text-gray-600 text-lg">
+                    We rolled up our sleeves and got to work. We didn’t just launch ads—we engineered them. Every campaign had custom ad copies, 
+                    tailored headlines, strong calls-to-action, and a mix of image and video assets.
+            
+                    We optimized aggressively, tracking metrics down to the SKU level. Clicks, impressions, CTR, ROAS—you name it, we monitored it. 
+                    It wasn’t a "set it and forget it" deal; this was a daily fine-tuning operation. Some campaigns thrived, some flopped, but the 
+                    beauty of running things in-house is that we could pivot fast.
+                </p>
+            </div>
+        </div>
+
+        <!-- Feature Item 4: Results -->
+        <div class="content gradient-border flex items-center feature-item">
+            <div class="icon-placeholder">
+                <img src="image/4.png" alt="Icon 4" class="w-full h-full object-cover rounded-full">
+            </div>
+            <div class="text-content">
+                <h2 class="text-lg font-semibold mb-2">Results</h2>
+                <p class="text-gray-600 text-lg">
+                    And the results? Let’s just say, we weren’t crazy to take the reins. ROAS shot up to 12:1, even after increasing the budget by 20%. 
+                    Impressions nearly doubled, and the best-performing campaigns ended up contributing 80% of total traffic.
+             
+                    We even spun off a new campaign based on our best-sellers because, well, why stop when you're ahead? What started as a "fine, we’ll 
+                    do it ourselves" moment turned into one of the most profitable marketing moves we made.
+                </p>
+            </div>
+        </div>
+
+    </main>
+</div>
+
 
     <!-- Bottom Form Section -->
     <div class="form-section">
