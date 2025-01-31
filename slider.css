@@ -3,6 +3,8 @@
 /* Slider container styling */
 #banner-slider {
     margin-top: -20px;
+    padding: -20px;
+
     width: 1200px;
     height: 430px;
     position: relative;
@@ -14,6 +16,12 @@
   /* All images are positioned on top of each other and hidden by default */
   #banner-slider img {
     padding-top: -20px;
+    margin-top: -20px;
+    margin-bottom: -20px;
+    padding-bottom: -20px;
+
+
+
 
     width: 900px;
     height: 430px;
@@ -37,10 +45,10 @@
     background-color:#8c52ff;
     color: #fff;
     border: none;
-    padding: 25px;
+    padding: 15px;
     cursor: pointer;
     z-index: 10;
-    border-radius: 100%;
+    border-radius: 60%;
   }
   
   /* Left button positioning */
