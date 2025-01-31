@@ -778,6 +778,37 @@
             font-size: 18px; /* Set font size of paragraphs to 18px */
         }
 
+        .icon-placeholder {
+    width: 20%; /* Changed from previous width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px; /* Add margin to the right of the icon */
+}
+.text-content {
+    width: 70%; /* Ensure text takes 70% of the container */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.6; /* Increase line height for better readability */
+    /* ...existing styles... */
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+}
+
+/* Optional: Adjust image size within the icon-placeholder if necessary */
+.icon-placeholder img {
+    width: 60%; /* Adjust as needed */
+    height: auto;
+}
+
+
+
     </style>
 </head>
 <body>
@@ -866,14 +897,86 @@
         </div>
     </div>
 
-    <!-- New Section -->
-    <div class="content">
-        <h2 class="business-case-heading">Business Case</h2>
+<!-- Insert star_email.html content above the form section -->
+<div class="content">
+    <main class="container mx-auto py-8">
+        <!-- Features Section -->
+        <h2 class="business-case-heading">Case in Action</h2>
         <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
-    </div>
+
+        <!-- Feature Item 1: Situation -->
+        <div class="content gradient-border flex items-center feature-item">
+            <div class="icon-placeholder">
+                <img src="image/1.png" alt="Icon 1" class="w-full h-full object-cover rounded-full">
+            </div>
+            <div class="text-content">
+                <h2 class="text-lg font-semibold mb-2">Situation</h2>
+                <p class="text-gray-600 text-lg">
+                    When I joined a foodservice company a few years back, I quickly realized that the entire conversation—internally and externally—revolved around price. 
+                    Customers wanted lower prices, sales reps pushed for discounts, and the whole place sounded like a flea market.
+
+                    For a marketer, that’s like nails on a chalkboard. If all people care about is price, it means marketing either isn’t doing its job or doesn’t exist. 
+                    And I wasn’t about to let that slide.
+                </p>
+            </div>
+        </div>
+
+        <!-- Feature Item 2: Tasks -->
+        <div class="content gradient-border flex items-center feature-item">
+            <div class="icon-placeholder">
+                <img src="image/2.png" alt="Icon 2" class="w-full h-full object-cover rounded-full">
+            </div>
+            <div class="text-content">
+                <h2 class="text-lg font-semibold mb-2">Tasks</h2>
+                <p class="text-gray-600 text-lg">
+                    The goal was clear: escape the price war, build customer loyalty, and make sure our marketing efforts actually contributed to business performance. 
+                    That meant positioning ourselves properly—because if you look at a business model canvas, everything above revenue and cost structure is just fancy 
+                    talk for “why should anyone care about you?”
+
+                    Who we are, what we do, how we’re different, and why people should buy from us instead of the guy next door—these were questions we needed to answer, convincingly.
+                </p>
+            </div>
+        </div>
+
+        <!-- Feature Item 3: Actions -->
+        <div class="content gradient-border flex items-center feature-item">
+            <div class="icon-placeholder">
+                <img src="image/3.png" alt="Icon 3" class="w-full h-full object-cover rounded-full">
+            </div>
+            <div class="text-content">
+                <h2 class="text-lg font-semibold mb-2">Actions</h2>
+                <p class="text-gray-600 text-lg">
+                    So, we went all in. We tackled the 7Ps of marketing, overhauled our logo, revamped our color scheme, redefined our vision, mission, and slogan, 
+                    and crafted a compelling brand story. We fine-tuned our product offerings, pricing strategy, distribution channels, promotional tactics, product copy, 
+                    and even our imagery.
+
+                    We even went as far as internal training—because if our own team wasn’t sold on who we were, how could we expect customers to be? 
+                    It was like giving the entire company a personality transplant, minus the medical bills.
+                </p>
+            </div>
+        </div>
+
+        <!-- Feature Item 4: Results -->
+        <div class="content gradient-border flex items-center feature-item">
+            <div class="icon-placeholder">
+                <img src="image/4.png" alt="Icon 4" class="w-full h-full object-cover rounded-full">
+            </div>
+            <div class="text-content">
+                <h2 class="text-lg font-semibold mb-2">Results</h2>
+                <p class="text-gray-600 text-lg">
+                    And guess what? It worked. Sure, we still ran storewide discounts—20% or 25% off for Black Friday, because, well, capitalism—but when we didn’t? 
+                    Customers still came and bought.
+            
+                    The obsession with pricing started to fade (except for the sales team, but let’s be honest, their job is to push for easy wins). 
+                    We weren’t best friends with them, but that’s fine—marketers and salespeople have different goals. 
+                    At the end of the day, we got what we wanted: a brand that wasn’t just about being the cheapest option, but the best choice.
+                </p>
+            </div>
+        </div>
+
+    </main>
+</div>
+
 
     <!-- Bottom Form Section -->
     <div class="form-section">
@@ -881,6 +984,7 @@
         <form></form>
             <input type="text" placeholder="Your Name">
             <input type="email" placeholder="Your Email">
+            <br>
             <button type="submit">Sign Up</button>
         </form>
     </div>
