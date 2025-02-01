@@ -53,12 +53,12 @@
   
   /* Left button positioning */
   .slider-btn.left {
-    left: 50px;
+    left: 10px;
   }
   
   /* Right button positioning */
   .slider-btn.right {
-    right: 50px;
+    right: 10px;
   }
   
   /* Optional: Hover effect for navigation buttons */
