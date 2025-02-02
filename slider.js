@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
   let currentSlide = 0;
   let slideInterval;
   const slides = document.querySelectorAll('#banner-slider img');
-  const intervalTime = 2000; // Time between slides in milliseconds
+  const intervalTime = 3000; // Time between slides in milliseconds
 
   function startSlideShow() {
       slideInterval = setInterval(() => {
