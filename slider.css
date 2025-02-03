@@ -16,12 +16,9 @@
   /* All images are positioned on top of each other and hidden by default */
   #banner-slider img {
     padding-top: -20px;
-    margin-top: -20px;
     margin-bottom: -20px;
     padding-bottom: -20px;
-
-
-
+    border-radius: 80px;
 
     width: 900px;
     height: 430px;
@@ -58,7 +55,7 @@
   
   /* Right button positioning */
   .slider-btn.right {
-    right: 10px;
+    right: 25px;
   }
   
   /* Optional: Hover effect for navigation buttons */
